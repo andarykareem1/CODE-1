@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+ int x,y,z,t;
+  float gs, exp,tax=0.25,net;
+  printf("Enter the number of worked hours:\n");
+  scanf("%d",&x);
+  printf("Enter the gross hourly wage:\n");
+  scanf("%d",&y);
+  gs=x*y;
+  exp=gs*tax;
+  net=gs-exp;
+  printf("The gross salary is %.2f\n",gs);
+  printf("The tax rate is 25%\n");
+  printf("The amount of expenses is %.2f\n",exp);
+  printf("The net salary is %.2f\n",net);
+  return 0;
+}
